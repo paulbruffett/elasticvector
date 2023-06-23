@@ -1,0 +1,33 @@
+{
+    "settings": {
+      "number_of_shards": 2,
+      "number_of_replicas": 1
+    },
+     "mappings": {
+      "dynamic": "true",
+      "_source": {
+        "enabled": "true"
+      },
+      "properties": {
+        "creationDate": {
+          "type": "date"
+        },
+        "title": {
+          "type": "text"
+        },
+        "text_vector": {
+          "type": "dense_vector",
+          "dims": 1536
+        },
+        "text": {
+          "type": "keyword"
+        },
+        "billId": {
+          "type": "keyword"
+        },
+        "summary": {
+          "type": "text"
+        }
+      }
+    }
+  }

@@ -1,0 +1,4 @@
+elasticcreds.json
+openaiconfig.json
+*.zip
+*.DS_Store
